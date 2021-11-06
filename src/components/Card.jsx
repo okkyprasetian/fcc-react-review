@@ -1,11 +1,11 @@
 import CDetail from './CDetail'
 import CFooter from './CFooter'
 
-function Card() {
+function Card({ reviewer, decNum, incNum, ranNum }) {
     return (
         <div className="card">
-            <CDetail />
-            <CFooter />
+            <CDetail reviewer={reviewer} />
+            <CFooter decNum={decNum} incNum={incNum} ranNum={ranNum} />
         </div>
     );
 }

@@ -1,6 +1,6 @@
-function Button() {
+function Button({ ranNum }) {
     return (
-        <button>
+        <button onClick={ranNum}>
             Surprise Me!
         </button>
     );

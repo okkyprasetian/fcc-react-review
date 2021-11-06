@@ -1,19 +1,18 @@
-function CDetail() {
+function CDetail({ reviewer }) {
     return (
         <div className="cdetail">
             <div className="img-container">
-                <div className="profile-img">
-                    IMG
+                <div className="profile-img" style={{ backgroundImage: `url(${reviewer.avatar})` }}>
                 </div>
             </div>
             <h2 className="profile-name">
-                Susan Smith
+                {reviewer.name}
             </h2>
             <p className="profile-job">
-                Web Developer
+                {reviewer.designation}
             </p>
             <p className="profile-review">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque veritatis eos natus voluptas ea distinctio consequatur dolorum provident totam praesentium quasi non delectus sit similique aspernatur, minus eveniet beatae? Vel.
+                {reviewer.message}
             </p>
         </div>
     );
