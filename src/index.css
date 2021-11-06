@@ -40,7 +40,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 150px;
 }
 
 .header h1 {
@@ -58,6 +58,7 @@
 .card {
   padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.2);
   background-color: white;
 }
 
@@ -122,4 +123,33 @@
 .button:hover {
   color: var(--theme-bluelight);
   background-color: #333;
+}
+
+@media screen and (min-width: 769px) {
+  :root {
+    font-size: 15px;
+  }
+
+  .main {
+    width: 50%;
+  }
+
+  .profile-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .profile-review {
+    height: 100px;
+  }
+
+  .arrow {
+    margin: 0 15px;
+  }
+
+  .button {
+    padding: 7px 50px;
+    border-radius: 20px;
+  }
+
 }
