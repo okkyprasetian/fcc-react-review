@@ -18,6 +18,18 @@
   background-color: var(--theme-bc);
 }
 
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading h1 {
+  color: var(--theme-bluedark);
+  font-size: 3rem;
+}
+
 .main {
   width: 80%;
   margin: 0 auto;
@@ -25,13 +37,22 @@
 
 .header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 200px;
 }
 
 .header h1 {
+  font-size: 3.5rem;
   color: var(--theme-bluedark)
+}
+
+.slash {
+  height: 3px;
+  width: 200px;
+  margin-top: 10px;
+  background-color: var(--theme-bluedark);
 }
 
 .card {
@@ -53,6 +74,7 @@
 }
 
 .profile-name {
+  margin: 20px 0 3px;
   text-align: center;
   color: var(--theme-bluedark);
 }
@@ -63,6 +85,8 @@
 }
 
 .profile-review {
+  height: 70px;
+  margin-top: 20px;
   text-align: center;
   color: var(--theme-bluemed)
 }
@@ -70,6 +94,7 @@
 .manufer {
   display: flex;
   justify-content: center;
+  margin: 0 0 10px;
 }
 
 .arrow {
