@@ -1,11 +1,11 @@
-import { AiOutlineDoubleLeft, AiOutlineDoubleRight } from 'react-icons/ai'
+import { FaAngleLeft, FaAngleRight } from 'react-icons/fa'
 import Button from './Button'
 
 function CFooter({ decNum, incNum, ranNum }) {
     return (
         <div className="cfooter">
             <div className="manufer">
-                <AiOutlineDoubleLeft className="arrow" onClick={decNum} /> <AiOutlineDoubleRight className="arrow" onClick={incNum} />
+                <FaAngleLeft className="arrow" onClick={decNum} /> <FaAngleRight className="arrow" onClick={incNum} />
             </div>
             <Button ranNum={ranNum} />
         </div>
