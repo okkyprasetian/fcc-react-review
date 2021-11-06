@@ -5,7 +5,7 @@ function CFooter({ decNum, incNum, ranNum }) {
     return (
         <div className="cfooter">
             <div className="manufer">
-                <AiOutlineDoubleLeft onClick={decNum} /> <AiOutlineDoubleRight onClick={incNum} />
+                <AiOutlineDoubleLeft className="arrow" onClick={decNum} /> <AiOutlineDoubleRight className="arrow" onClick={incNum} />
             </div>
             <Button ranNum={ranNum} />
         </div>

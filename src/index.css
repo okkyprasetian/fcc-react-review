@@ -4,8 +4,22 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-size: 12px;
+  --theme-bc: #C1C8E4;
+  --theme-purple: #8860D0;
+  --theme-bluedark: #5680E9;
+  --theme-bluemed: #5AB9EA;
+  --theme-bluelight: #84CEEB;
+}
+
 .App {
-  width: 50%;
+  height: 100vh;
+  background-color: var(--theme-bc);
+}
+
+.main {
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -16,9 +30,55 @@
   height: 200px;
 }
 
+.header h1 {
+  color: var(--theme-bluedark)
+}
+
+.card {
+  padding: 20px;
+  background-color: white;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
 .profile-img {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
   background-position: center center;
+}
+
+.profile-name {
+  text-align: center;
+  color: var(--theme-bluedark);
+}
+
+.profile-job {
+  text-align: center;
+  color: var(--theme-bluelight)
+}
+
+.profile-review {
+  text-align: center;
+  color: var(--theme-bluemed)
+}
+
+.manufer {
+  display: flex;
+  justify-content: center;
+}
+
+.arrow {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
 }

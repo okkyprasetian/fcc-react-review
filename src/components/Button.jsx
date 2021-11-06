@@ -1,6 +1,6 @@
 function Button({ ranNum }) {
     return (
-        <button onClick={ranNum}>
+        <button className="button" onClick={ranNum}>
             Surprise Me!
         </button>
     );
